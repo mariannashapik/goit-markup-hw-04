@@ -163,9 +163,12 @@ ul{
 /* Promo section */
 
 .promo{
+    background-image:linear-gradient(rgba(47,48,58,0.4),rgba(47,48,58,0.4)), url(/images/Img.svg);
     background-color: var(--footer-color);
     padding-top: 200px;
     padding-bottom:200px;
+    background-size: cover;
+    
     }
 
 .promo-box{
@@ -354,9 +357,12 @@ gap: 10px;
     height: 92px;
     fill:currentColor;
     color:#AFB1B8;
-    
-    
 }
+
+
+    
+    
+
 .clients-list-item:hover{
 color:var(--accent-color);
 }
@@ -369,8 +375,8 @@ footer{
     padding-bottom:60px;
 }
 
-.company{
-    
+.company-contacts{
+   margin-right:70px; 
 }
 .company a{
     font-size: 14px;
@@ -398,9 +404,60 @@ color: var(--main-color);
 
 .webstudio{
     margin-bottom:20px;
+   
 }
 
+.footer-flex-box{
+    display: flex;
+   
+}
+.subscribe-us{
+display:flex;
+flex-direction: column;
+justify-content:center;
 
+}
+
+.social-links-footer{
+    display: flex;
+}
+
+    .social-links-call{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color:var(--logo-white);
+    text-transform: uppercase;
+    }
+
+.social-links-list-footer{
+    display:flex;
+   margin-top: 20px;
+    gap: 10px;
+    
+}
+
+.social-link-item-footer{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width:40px;
+    height:40px;
+    width: 44px;
+    height: 44px;
+    border-radius:50%;
+    fill:currentColor;
+    color:#AFB1B8;
+    background-color:rgba(255, 255, 255, 0.1);
+}
+
+.social-link-item-footer:hover{
+    color:var(--main-color);
+    background-color:var(--accent-color);
+}
+
+   
 /* Portfolio nav*/
 .projects{
     padding-top: 94px;
@@ -433,6 +490,8 @@ color: var(--main-color);
 .projects-navigation button:focus{
         background-color: var(--accent-color);
         color:var(--main-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
 
 .projects-list{
@@ -447,6 +506,12 @@ color: var(--main-color);
     padding:20px 24px;
     
 }
+
+.projects-list-item:hover
+{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .projects-list h2{
     font-size: 18px;
     line-height:2;

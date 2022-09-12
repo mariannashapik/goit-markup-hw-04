@@ -163,7 +163,7 @@ ul{
 /* Promo section */
 
 .promo{
-    background-image:linear-gradient(rgba(47,48,58,0.4),rgba(47,48,58,0.4)), url(/images/Img.svg);
+    background-image:linear-gradient(rgba(47,48,58,0.4),rgba(47,48,58,0.4)), url(../images/Img.svg);
     background-color: var(--footer-color);
     padding-top: 200px;
     padding-bottom:200px;

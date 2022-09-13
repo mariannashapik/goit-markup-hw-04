@@ -163,8 +163,10 @@ ul{
 /* Promo section */
 
 .promo{
-    background-image:linear-gradient(rgba(47,48,58,0.4),rgba(47,48,58,0.4)), url(../images/Img.svg);
+    background-image:linear-gradient(rgba(47,48,58,0.4),rgba(47,48,58,0.4)), url(../images/backimage.jpg);
     background-color: var(--footer-color);
+    background-repeat: no-repeat;
+    background-position: center;
     padding-top: 200px;
     padding-bottom:200px;
     background-size: cover;
@@ -232,8 +234,17 @@ margin-bottom:50px;
     gap: 30px;
 }
 
-.benefits-list-icon{
-    margin-bottom:30px;
+.benefits-list-box{
+    box-sizing: border-box;
+    Width:270px;
+    Height:120px;
+    background-color:#F5F4FA;
+border-radius: 4px; 
+display:flex;
+justify-content:center;
+align-items:center;
+margin-bottom:30px;
+
 }
 
 .visually-hidden {
@@ -365,6 +376,7 @@ gap: 10px;
 
 .clients-list-item:hover{
 color:var(--accent-color);
+border-color: var(--accent-color);
 }
 
 /* Footer */
@@ -412,28 +424,26 @@ color: var(--main-color);
    
 }
 .subscribe-us{
-display:flex;
-flex-direction: column;
-justify-content:center;
-
+    
 }
 
 .social-links-footer{
     display: flex;
 }
 
-    .social-links-call{
+    .subscribe-us-call{
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     color:var(--logo-white);
     text-transform: uppercase;
+    padding-top:5%;
+    margin-bottom: 20px;
     }
 
 .social-links-list-footer{
     display:flex;
-   margin-top: 20px;
     gap: 10px;
     
 }
@@ -448,12 +458,11 @@ justify-content:center;
     height: 44px;
     border-radius:50%;
     fill:currentColor;
-    color:#AFB1B8;
+    color:var(--main-color);
     background-color:rgba(255, 255, 255, 0.1);
 }
 
 .social-link-item-footer:hover{
-    color:var(--main-color);
     background-color:var(--accent-color);
 }
 
@@ -491,7 +500,6 @@ justify-content:center;
         background-color: var(--accent-color);
         color:var(--main-color);
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
 }
 
 .projects-list{
@@ -524,6 +532,13 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 .projects-list p{
 font-size: 16px;
 line-height: 1.8;
+color:#757575;
+
 }
+
+.projects-list-item-link{
+text-decoration: none;
+}
+
 
 
